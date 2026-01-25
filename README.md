@@ -8,19 +8,19 @@ A robust two-stage deep learning pipeline for automated retail shelf product det
 
 - **🔍 Two-Stage Detection Pipeline**
 
-  An end-to-end computer vision solution that combines object detection and image classification. First, YOLOv5 identifies and localizes individual products on retail shelves with bounding boxes. Second, ResNet-18 classifies each detected product into its respective category — achieving high accuracy across 81 distinct product classes in real-world retail environments.
+  An end-to-end computer vision solution combining object detection and image classification. YOLOv5 localizes individual products on retail shelves with bounding boxes, then ResNet-18 classifies each detected product into its respective category.
 
 - **📸 YOLOv5 Fine-Tuning for Dense Object Detection**
 
-  Implemented and fine-tuned YOLOv5 on the SKU110K dataset containing densely packed shelf products. The model successfully detects an average of ~160 products per shelf image with high confidence (>0.82), handling challenging scenarios like occlusions, varying lighting conditions, and cluttered shelf arrangements typical in retail settings.
+  Fine-tuned YOLOv5 on the SKU110K dataset to detect densely packed shelf products. The model successfully identifies an average of ~160 products per shelf image with high confidence (>0.82), handling occlusions, varying lighting, and cluttered arrangements.
 
 - **🧠 ResNet-18 Transfer Learning for Product Classification**
 
-  Leveraged transfer learning with ResNet-18 architecture, pre-trained on ImageNet and fine-tuned on the Grocery Store Dataset. Achieved 78.31% test accuracy across 81 product categories with a macro F1-score of 77.75%. The model effectively captures visual features distinguishing similar products like different apple varieties and tomato types.
+  Leveraged ResNet-18 transfer learning, pre-trained on ImageNet and fine-tuned on the Grocery Store Dataset. Achieved 78.31% test accuracy across 81 product categories with a macro F1-score of 77.75%, effectively distinguishing similar products like different apple and tomato varieties.
 
 - **📊 End-to-End Retail Shelf Intelligence System**
 
-  Delivers a complete solution for transforming raw shelf images into actionable retail insights. The pipeline processes shelf photographs through detection and classification stages to generate structured product inventory data, enabling applications such as automated stock monitoring, planogram compliance verification, out-of-stock detection, and competitive shelf space analysis in retail environments.
+  Transforms raw shelf images into actionable retail insights through automated detection and classification. The pipeline generates structured product inventory data, enabling automated stock monitoring, planogram compliance verification, out-of-stock detection, and shelf space analysis.
 
 
 ## 📁 Project Structure
