@@ -16,7 +16,7 @@ A robust two-stage deep learning pipeline for automated retail shelf product det
 
 - **🧠 ResNet-18 Transfer Learning for Product Classification**
 
-  Leveraged ResNet-18 transfer learning, pre-trained on ImageNet and fine-tuned on the Grocery Store Dataset. Achieved 78.31% test accuracy across 81 product categories with a macro F1-score of 77.75%, effectively distinguishing similar products like different apple and tomato varieties.
+  Leveraged ResNet-18 transfer learning, pre-trained on ImageNet and fine-tuned on the Grocery Store Dataset following the [hierarchical classification approach](https://ieeexplore.ieee.org/document/9098857). Achieved 78.31% accuracy across 81 product categories with macro F1-score of 77.75%, effectively distinguishing similar products like different apple and tomato varieties.
 
 - **📊 End-to-End Retail Shelf Intelligence System**
 
@@ -58,5 +58,5 @@ CNN-shelf-product-detection-project/
 | -------------- | ---------------- | ------------- |
 | Detection      | mAP@0.5          | 88.9%         |
 | Detection      | Precision/Recall | 89.6% / 81.8% |
-| Classification | Test Accuracy    | 78.31%        |
+| Classification | Accuracy         | 78.31%        |
 | Classification | Macro F1         | 77.75%        |
